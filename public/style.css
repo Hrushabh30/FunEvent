@@ -8,6 +8,11 @@ body {
     background-color: #f9f9f9;
 }
 
+.alert{
+    text-align: center;
+    color: #FF0000;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
