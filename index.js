@@ -3,7 +3,7 @@ const firebaseAdmin = require('firebase-admin');
 const path = require('path');
 
 // Initialize Firebase Admin SDK
-const serviceAccount = require('./serviceAccountKey.json');
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 firebaseAdmin.initializeApp({
   credential: firebaseAdmin.credential.cert(serviceAccount),
   databaseURL: 'https://gtmfuncrossword-default-rtdb.firebaseio.com' // Update with your database URL
